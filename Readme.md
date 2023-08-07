@@ -3,6 +3,10 @@
 <strong></strong>
 GenratrAPI is a simple web service built using Node.js and Express that allows you to generate random passwords with varying degrees of complexity. You can customize the password strength by specifying the character sets you want to include (special characters, lowercase letters, uppercase letters, and numbers) and the desired password length.
 
+## One click deployment
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/s_q0r3?referralCode=yavAI)
+
 ## Prerequisites
 
 - Node.js and npm installed on your machine.
