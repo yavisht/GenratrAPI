@@ -1,0 +1,27 @@
+{
+  "name": "genratr-api",
+  "version": "1.0.0",
+  "description": "A simple strong password generator api",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "dev-test": "jest --watch",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yavisht/GenratrAPI.git"
+  },
+  "author": "Yavisht Katgara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yavisht/GenratrAPI/issues"
+  },
+  "homepage": "https://github.com/yavisht/GenratrAPI#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
+  }
+}
