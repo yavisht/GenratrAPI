@@ -1,10 +1,12 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const path = require("path");
 const genratr = require("./lib/genratr"); // Import the password generator module
 
 const PORT = process.env.PORT || 8080;
 
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
