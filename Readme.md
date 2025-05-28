@@ -1,7 +1,14 @@
 # GenratrAPI
 
-<strong></strong>
-GenratrAPI is a simple web service built using Node.js and Express that allows you to generate random passwords with varying degrees of complexity. You can customize the password strength by specifying the character sets you want to include (special characters, lowercase letters, uppercase letters, and numbers) and the desired password length.
+**GenratrAPI** is a simple web service built using Node.js that allows you to generate random passwords with varying degrees of complexity. You can customize the password strength by specifying the character sets you want to include (special characters, lowercase letters, uppercase letters, and numbers) and the desired password length.
+
+## 🆕 What's new in v1.1.0
+
+- ⚡ **Rebuilt using native `http` module** — no Express, Helmet, or middleware overhead
+- 🧠 **Ultra-fast in-memory index.html** — zero disk I/O, Brotli-compressed at startup
+- 🔐 **Manual security headers** — including CORS, XSS protection, and MIME sniffing
+- 💨 **Brotli compression for JSON responses** — saves bandwidth without slowdowns
+- 🧱 **Modular codebase** — split into `routes`, `utils`, and `lib`
 
 ## One click deployment
 
@@ -19,7 +26,7 @@ GenratrAPI is a simple web service built using Node.js and Express that allows y
 
 ## Getting Started
 
-1. Start the server by running `npm start` or `node app.js`.
+1. Start the server by running `npm start` or `node server.js`.
 2. The server will listen on port 8080 by default. You can change the port by setting the `PORT` environment variable.
 
 ## Installation
@@ -78,7 +85,7 @@ curl "http://localhost:8080/?length=10"
 Generate a password with specific settings (20 characters, includes special characters, lowercase and uppercase letters, and numbers):
 
 ```bash
-curl "http://localhost:8080/?special&lowercase&uppercase&numbers&length=20"
+curl "http://localhost:8080/?length=16&uppercase&lowercase&special&numbers"
 ```
 
 #### Response
