@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GenratrAPI - Free strong password generator API</title>
-    <meta name="description"
-        content="Generate strong random passwords with GenratrAPI. Customize password options using query parameters.">
-    <meta name="keywords" content="password generator, free API, random password, secure password, query parameters">
-    <meta name="robots" content="index, follow">
+    <meta
+      name="description"
+      content="Generate strong random passwords with GenratrAPI. Customize password options using query parameters."
+    />
+    <meta
+      name="keywords"
+      content="password generator, free API, random password, secure password, query parameters"
+    />
+    <meta name="robots" content="index, follow" />
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
 
-        .container {
-            text-align: center;
-            padding:30px;
-            top:10vh;
-            position: relative;
-        }
+      .container {
+        text-align: center;
+        padding: 30px;
+        top: 10vh;
+        position: relative;
+      }
 
-        h1 {
-            color: #333;
-        }
+      h1 {
+        color: #333;
+      }
 
-        p {
-            color: #666;
-        }
-        pre{
-            width: 100%;
-            overflow: auto;
-            height:50px;
-        }
-        a{
-            color: #fff;
-            background: #333;
-            padding:10px;
-            display: inline-block;
-            text-decoration: none;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-        ul{
-            margin-top:15px;
-            padding:0;
-            list-style:none;
-            display:flex;
-            justify-content: center
-        }
-        ul li{
-            margin-right:10px;
-        }
-        ul li:last-of-type{
-            margin-right:0px;
-        }
+      p {
+        color: #666;
+      }
+      pre {
+        width: 100%;
+        overflow: auto;
+        height: 50px;
+      }
+      a {
+        color: #fff;
+        background: #333;
+        padding: 10px;
+        display: inline-block;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        margin-top: 15px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      ul li {
+        margin-right: 10px;
+      }
+      ul li:last-of-type {
+        margin-right: 0px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>GenratrAPI</h1>
-        <p>Generate random passwords with customizable options.</p>
-        <p>To generate a password, make a GET request to the root URL: <code>https://api.genratr.com</code></p>
-        <p>Pass query parameters to customize the password generation</p>
-        <pre><code>https://api.genratr.com/?length=16&uppercase&lowercase&special&numbers</code></pre>
-        <ul>
-            <li><a target="_blank" href="https://api.genratr.com/?length=16&uppercase&lowercase&special&numbers">Try it</a></li>
-            <li><a target="_blank" href="https://github.com/yavisht/GenratrAPI">Docs</a></li>
-        </ul>
+      <h1>GenratrAPI</h1>
+      <p>Generate random passwords with customizable options.</p>
+      <p>
+        To generate a password, make a GET request to the root URL:
+        <code>https://api.genratr.com</code>
+      </p>
+      <p>Pass query parameters to customize the password generation</p>
+      <pre><code>https://api.genratr.com/?length=16&uppercase&lowercase&special&numbers</code></pre>
+      <ul>
+        <li>
+          <a href="/?length=16&uppercase&lowercase&special&numbers">Try it</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/yavisht/GenratrAPI"
+            >Docs</a
+          >
+        </li>
+      </ul>
     </div>
-</body>
-
+  </body>
 </html>
